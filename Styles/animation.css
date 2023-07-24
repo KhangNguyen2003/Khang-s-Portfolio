@@ -1,0 +1,40 @@
+/* Animation */
+@keyframes blink {
+    from {
+        opacity:1
+    }
+
+    to{
+        opacity: 0;
+    }
+}
+
+@keyframes fontChanging {
+    0%{
+        font-family: "Heading1";
+    }
+    25%{
+        font-family: "Heading2";
+    }
+    50%{
+        font-family: "Heading3";
+    }
+    75%{
+        font-family: "Heading4";
+    }
+    100%{
+        font-family: "Heading5";
+    }
+}
+
+@keyframes FadeIn {
+    from{
+        opacity: 0;
+        transform: translateY(100%);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

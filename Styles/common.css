@@ -1,0 +1,48 @@
+/* Fonts */
+html{
+    scroll-behavior: smooth;
+    padding: 0px;
+}
+
+*{
+   font-family: "Body_text";
+}
+
+
+@font-face {
+    font-family: "Heading1";
+    letter-spacing: 15px;
+    src: url(../fonts/Fasthand-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Heading2";
+    letter-spacing: 15px;   
+    src: url(../fonts/Baloo2-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Heading3";
+    letter-spacing: 15px;
+    src: url(../fonts/DancingScript-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "Heading4";
+    letter-spacing: 15px;
+    src: url(../fonts/Lobster-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Heading5";
+    letter-spacing: 15px;
+    src: url(../fonts/RobotoMono-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "Body_text";
+    src: url(../fonts/VarelaRound-Regular.ttf);
+}
+
+
+

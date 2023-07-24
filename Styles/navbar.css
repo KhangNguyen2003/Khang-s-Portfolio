@@ -1,0 +1,139 @@
+
+nav{
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    height: 45px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+    background-image: url("../Images/pattern1.jpg");
+    background-size: cover;
+    border-radius: 0px 0px 20px 20px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 99999;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    margin:0;
+    padding:0;
+}
+
+nav ul li{
+    list-style: none;
+    text-decoration: none;
+    padding: 5px;
+    position: relative;
+    overflow: hidden;
+    width: 20px;
+    height: 20px;
+    transition: 0.5s ease-in-out;
+}
+
+nav ul div{
+    margin:0px;
+}
+
+/* Hover */
+nav ul li:hover{
+    width : 90px;
+    transform: scale(120%);
+}
+
+nav ul li:hover:focus{
+    width : 90px;
+    transform: scale(120%);
+}
+
+nav ul li:nth-child(3):hover{
+    width : 110px;
+}
+
+nav ul li:nth-child(4):hover{
+    width : 140px;
+}
+
+nav ul li:nth-child(3):hover:focus{
+    width : 110px;
+}
+
+nav ul li:nth-child(4):hover:focus{
+    width : 140px;
+}
+
+/* After */
+
+nav ul li:hover::after{
+    content:"";
+    width: 120%;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left:0;
+}
+
+
+/* Links  */
+nav ul li a:link{
+    text-decoration: none;
+    color:white;
+}
+
+nav ul li a:active{
+    text-decoration: none;
+    color:white;
+}
+
+nav ul li a:visited{
+    text-decoration: none;
+    color:white;
+}
+
+/* Light Mode*/
+#theme{
+    height: 20px;
+    width: 20px;
+    border: none;
+    background-color: none;
+    text-align: left;
+    transition: .5s ease-in-out;
+    position: relative;
+}
+
+#theme:hover{
+    color:rgb(253, 255, 119);
+    animation: rotation 1s;
+    transform: scale(130%);
+
+}
+
+/* Animation */
+@keyframes rotation {
+    from {
+      transform: rotate(0deg) scale(100%);
+    }
+    to {
+      transform: rotate(359deg) scale(130%);
+    }
+  }
+
+  /* @media */
+  @media screen and (max-width: 1000px){
+    nav{
+            font-size: 15px;
+            height: 30px;
+    }
+
+    nav ul li {
+        height: 15px;
+    }
+  }

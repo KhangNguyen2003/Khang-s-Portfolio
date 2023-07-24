@@ -1,0 +1,405 @@
+body{
+    background-color: #3A81AF;
+    color:white;
+    margin: 0;
+    padding:0;
+    overflow-x: hidden;
+    animation: FadeIn 0.5s ease-in-out;
+}
+
+.background1{
+    background-image: url(../Images/day.jpg);
+    position: relative;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    box-shadow: 0px 3px 10px black;
+    z-index: 2;
+}
+
+/* Summary Section */ 
+.summary{
+    text-align: center;
+    align-items: center;
+    padding: 80px 0px 0px 30px;
+    margin-bottom: 75px;
+}
+
+h1{
+    font-size: 60px;
+    height: 80px;
+    padding:0;
+    text-align: center;
+    text-shadow:2px 2px 2px black;
+    align-items: center;
+    font-family: "Heading5";
+    letter-spacing: 15px;
+    width: fit-content;
+    margin:30px auto;
+    position: relative;
+    animation: fontChanging 10s infinite;  
+}
+
+
+h1::after{
+    content: "";
+    height: 100%;
+    width: 3px;
+    position: absolute;
+    background-color: white;
+    right:0px;
+    animation: blink 1s infinite;
+}
+
+/* P text */
+.summary p{
+    animation: fadeIn 1s ease-in-out;
+    font-size: 20px;
+    width: 50%;
+    margin: 30px auto;
+    animation: FadeIn 1s
+}
+
+.summary p span{
+    color: #FDD83C;
+    text-shadow: 1px 1px 1px black;
+}
+
+.summary p span:nth-child(1){
+    font-family: "Heading1";
+    font-size: 30px;   
+}
+
+.summary div h3{
+    font-size: 23px;
+    margin:75px auto;
+    width: fit-content;
+    text-align: center;
+    background-color:#FDD83C ;
+    border-radius: 20px;
+    padding: 5px 40px;
+    position: relative;
+    z-index: 2;
+}
+
+.summary div h3::after{
+    position: absolute;
+    content:" ";
+    top:45%;
+    left:-200%;
+    width: 50vw;
+    height: 3px;
+    background-color: #FDD83C;
+    border-radius: 50px;
+    z-index: -1;
+}
+
+/* The Skills Logos*/
+.summary ul{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 30px;
+    width:60%;
+    height: fit-content;
+    margin:20px auto;
+    background-color: rgba(255, 255, 255,0.5);
+    border-bottom: 5px solid rgba(0, 0, 0, 0.416) ;
+    padding: 10px;
+}
+
+.summary ul li{
+    list-style: none;
+    margin : 10px;
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
+}
+
+.skills ul li img{
+    width:100px;
+    height: 100px;
+    filter: drop-shadow(1px 2px 2px black) ;
+}
+
+.skills ul li:hover{
+    transform: scale(110%);
+    top:-20px;
+}
+
+/* About */
+.about{
+    text-align: center;
+    width: 80%;
+    line-height: 35px;
+    font-size: 20px;
+    padding-bottom: 30px;
+    margin: 2px auto;
+    
+}
+
+.about h3{
+    position: relative;
+    width: fit-content;
+    margin: 0px auto;
+    background-color: #FDD83C;
+    padding : 5px 20px;
+    border-radius: 20px;
+    z-index: 1;
+}
+.about h3::after{
+    content:" ";
+    position: absolute;
+    top:45%;
+    left:-170%;
+    width: 50vw;
+    height: 3px;
+    background-color: #FDD83C;
+    border-radius: 50px;
+    z-index: -1;
+}
+
+.about span{
+    color: #FDD83C;
+    text-shadow: 1px 1px 1px black;
+}
+.about p{
+    width: fit-content;
+    padding: 0px 20px 0px 20px;
+    border-radius: 20px;
+    border-bottom : 7px rgba(0, 92, 131, 0.5) solid;
+    margin:20px auto;
+    text-shadow: 0px 1px 1px black;
+    background-color: rgba(0, 157, 224, 0.5);
+}
+
+/*Background2*/
+.background2{
+    background-image: url("../Images/mountain_day.jpg");
+    position: relative;
+    background-size: cover;
+    background-position: top;
+    background-repeat: none;
+    margin-top: -30px;
+    padding-top:30px;
+    padding-bottom : 20px;
+    z-index: 1;
+    border-radius: 20px;
+    box-shadow: 0px 2px 10px black;
+}
+.background2 h2{
+    font-size: 35px;
+    text-align: center;
+    text-shadow: 1px 1px 2px black;
+    margin-top: 30px;
+    padding-top:30px;
+}
+
+.background2 .projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.background2 .box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    border-bottom: 5px solid gray;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255,0.5);
+    width: fit-content;
+    height: 200px;
+    padding : 0px 15px;
+    margin: 10px;
+}
+
+.background2 .box img{
+    width: 270px;
+    height: 160px;
+    margin-right: 15px;
+    padding:0;
+    border-radius: 10px;
+}
+
+.background2 .box .text{
+    width: 300px;
+    font-size: 15px;
+}
+
+/*Contact Me*/
+.contact{
+    background-image: url(../Images/city-day.webp);
+    background-size: cover;
+    background-position: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    padding-top: 50px;
+    margin-top: -30px;
+}
+
+.contact h2{
+    text-align: center;
+    font-size: 35px;
+    margin:20px;
+    text-shadow: 1px 1px 2px black;
+}
+
+.contact_flex{
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;   
+    font-size: 20px;
+    padding: 0;
+    line-height: 40px;
+}
+
+.contact_flex .links {
+    width: 28vw;
+    margin:10px;
+    margin-right: 10vw;
+}
+
+.contact_flex .links a{
+    color:white;
+    text-decoration: none;
+}
+
+.contact_flex .links .links_flex {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.links_flex:hover{
+    background-color: rgba(193, 227, 227, 0.5);
+    text-shadow: 1px 1px 2px black;
+}
+
+.contact_flex .message{
+    width: 30vw;
+    padding:0;
+    margin: 0;
+    background-color: rgba(193, 227, 227, 0.5);
+    border-radius: 20px;
+    position: relative;
+}
+
+.contact_flex .message h3{
+    text-align: center;
+    margin: 5px;
+    text-shadow: 1px 1px 2px black;
+}
+
+.contact_flex .message form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contact_flex .message input{
+    border: none;
+    width: 280px;
+    height: 30px;
+    border-radius: 5px;
+    resize: none;
+    margin: 5px 0px 15px 0px;
+}
+
+.contact_flex .message textarea{
+    border: none;
+    width: 280px;
+    height: 100px;
+    border-radius: 5px;
+    resize: none;
+}
+
+
+.contact_flex .message #sendBtn{
+    border-radius: 10px;
+    width: 80px;
+    text-align: center;
+    margin: 10px;
+    background-color: #3A81AF;
+    cursor: pointer;
+}
+
+.contact_flex .message #sendBtn:hover{
+    background-color: #275675;
+}
+ 
+/*footer*/
+footer{
+    z-index: -2;
+    width: 100vw;
+    font-size: 15px;
+    height: fit-content;
+    text-align: center;
+    font-size: 10px;
+    margin: 20px;
+}
+
+
+/*@media */
+@media screen and (max-width: 1000px) {
+    h1{
+        font-size: 25px;
+        margin-bottom: 50px;
+        width: fit-content;
+        height:fit-content;
+        letter-spacing: 15px;
+    }
+
+    .summary p {
+        width: 80vw;
+    }
+
+    .skills ul li img {
+        width: 75px;
+        height: 75px;
+    }
+
+    body{
+        width: 100vw;
+        overflow-x: hidden;
+    }
+
+    .contact_flex {
+        flex-direction: column;
+    }
+
+    .contact_flex .links{
+        width: 90vw;
+        font-size: 15px;
+    }
+
+    .contact_flex .message {
+        width: 80vw;
+        margin-top: 10px;
+    }
+
+    .about h3::after {
+        display: none;
+    }
+    .summary h3::after {
+        display: none;
+        margin-bottom: 20px;
+    }
+
+    .background2 .box {
+        flex-direction: column;
+        width: 80vw;
+        height: fit-content;
+        padding: 10px;
+    }
+  }

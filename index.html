@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khang's Portfolio Website</title>
+
+    <!--Styles Links-->
+    <link rel="stylesheet" href="Styles/common.css">
+    <link rel="stylesheet" href="Styles/animation.css">
+    <link rel="stylesheet" href="Styles/index.css">
+    <link rel="stylesheet" href="Styles/navbar.css">
+
+
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("HXpxdwzhFD9O7YSwO");
+        })();
+    </script>
+
+</head>
+<body>
+
+    <header>
+        <nav>
+                <ul class="sections">
+                    <li><a href="#summary"> <i class="fa-solid fa-house">      </i> Home</a></li>
+                    <li><a href="#about">   <i class="fa-solid fa-user">       </i> About</a></li>
+                    <li><a href="#portfolio"><i class="fa-solid fa-laptop-code"></i> Projects</a></li>
+                    <li><a href="#contact"> <i class="fa-solid fa-envelope">   </i> Contact me</a></li>
+
+                    <div id="theme">
+                        <i class="fa-solid fa-sun"></i>
+                    </div>
+
+                </ul>             
+        </nav>  
+    </header>
+    
+    <div class="background1">
+        <div class="summary" id="summary">
+            <h1 id="heading">Web Developer</h1>
+            <p>Greetings! I am <span>Khang</span>. <br>
+               I specialize in <span>Front-end development</span>,
+                creating unique UI/UX designs using HTML,
+                 CSS and Javascript. For backend purposes i can work with Node.js 
+            </p>
+            <div class="skills">
+                <h3>Skills</h3>
+                <ul>
+                    <li><img src="Images/html.png" alt="" height="" width=""></li>
+                    <li><img src="Images/css.png" alt="" height="" width=""></li> 
+                    <li><img src="Images/javascript.png" alt="" height="" width=""></li>
+                    <li><img src="Images/NodeJs.png" alt="" height="" width=""></li>
+                    <li><img src="Images/java.png" alt="" height="" width=""></li>
+                    <li><img src="Images/logo-mysql-mysql-logo-png-images-are-download-crazypng-21.png" alt="" height="" width=""></li>
+                    <li><img src="Images/photoshop.png" alt="" height="" width="">
+                        <span class="anchor" id="about"></span>
+                    </li>
+    
+                </ul>              
+            </div>            
+        </div>
+
+        <div class="about" >
+            <h3 >About me</h3>
+            <p><span>Khang Nguyen Tuan</span> is my name, but you can also call me Leo ~ <br> <br>
+               I was borned and raised in Vietnam until i decided to come to Canada searching for new life opportunies. <br><br>
+               Currently a Computer Programming student at Georgian@ILAC. <br><br>
+               I considered myself to be a dedicated, creative and detail-oriented person. <br><br>
+               I am searching for a intern or co-op position as an Junior Fullstack developer. 
+            </p>
+        </div>
+    </div>
+
+<div class="background2" id="portfolio">
+    <div class="portfolio" >
+        <h2>My Projects</h2>
+
+        <div class="projects">
+                <div class="box">
+                    <img src="Images/websites/Giant-Apple-Screen.png" alt="" height="" width="">
+                    <div class="text">
+                        <h3>Ecommerce Website : 
+                                <a href="Pages/Ecommerce/index_ecommerce.html"><i class="fa-solid fa-display"></i></a>
+                                <a href=""><i class="fa-brands fa-github"></i></a>
+                        </h3>
+                        <p>An emcommerce website for a fictional company, Giant Apple. They specialize in giant stuff plushes. <br> <br>
+                            "Comfortable" and "Welcoming" were the goals when i designed the site. <br> <br>
+                        </p>                                                      
+                    </div>                
+                </div>   
+                
+                <div class="box">
+                    <img src="Images/websites/EveryThingSax_Screen.png" alt="" height="" width="">
+                    <div class="text">
+                        <h3>Promotional Website : 
+                                <a href="Pages/Promotional/Saxophone.html"><i class="fa-solid fa-display"></i></a>
+                                <a href=""><i class="fa-brands fa-github"></i></a>
+                        </h3>
+                        <p>A website promoting Saxophones. <br><br>This website primally exercises using HTML, CSS and simple JS creating a simple yet stylistic retro look.
+                        </p>                                                      
+                    </div>                
+                </div> 
+        </div>
+    </div>
+</div>
+
+<div class="contact" id="contact">
+    <h2>Get in touch with me</h2>
+
+    <div class="contact_flex">
+             
+        <div class="links">  
+
+            <a href="https://www.linkedin.com/in/khang-nguyen-tuan/">      
+            <div class="links_flex">
+              <i class="fa-brands fa-linkedin"></i>
+              <div>LinkedIn</div>
+            </div></a>
+
+            <div class="links_flex">
+              <i class="fa-solid fa-envelope"></i>
+              <div>khangkhangnguyen2003@gmail.com</div>
+            </div>
+
+            <div class="links_flex">
+              <i class="fa-solid fa-phone"></i>
+              <div>+1 437 376 0828</div>
+            </div>
+
+            <div class="links_flex">
+              <i class="fa-brands fa-github"></i>
+              <div>GitHub Repository</div>
+            </div>
+        </div>
+          
+        
+        <div class="message">
+            <h3>Send me a message!</h3>
+            <form>  
+                <input type="email" id="email" name="email" placeholder="Your Email or Phone Number">          
+                <textarea id="message" placeholder="Hello!"></textarea>
+                <div id="sendBtn">
+                     Send
+                </div>
+            </form>
+        </div>
+    </div>  
+
+    <footer>   
+        <div class="copyright">
+            <i class="fa-regular fa-copyright"></i> Created By Khang Nguyen Tuan 2023 </p>
+        </div><p>
+     </footer>        
+</div>  
+
+    <!--Javascript Links-->
+    <script src="Javascript/navbar.js"></script>
+    <script src="Javascript/submit.js"></script>
+    <script src="https://kit.fontawesome.com/8d2ae1a8e4.js" crossorigin="anonymous"></script>
+</body>
+</html>
