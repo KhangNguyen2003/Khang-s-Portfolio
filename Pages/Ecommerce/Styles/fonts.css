@@ -1,0 +1,19 @@
+@font-face{
+    font-family:"Heading-Messy";
+    src : url(../../../fonts/plush/GloriaHallelujah-Regular.ttf);
+}
+
+@font-face{
+    font-family:"Heading-Cursive";
+    src : url(../../../fonts/plush/MarckScript-Regular.ttf);
+}
+
+@font-face{
+    font-family:"Body-text";
+    src : url(../../../fonts/plush/Neucha-Regular.ttf);
+}
+
+@font-face{
+    font-family:"Heading-Big";
+    src : url(../../../fonts/plush/RockSalt-Regular.ttf);
+}

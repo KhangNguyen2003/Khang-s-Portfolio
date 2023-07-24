@@ -1,0 +1,223 @@
+/*Footer*/
+
+footer{
+    background-color: rgba(100,155,100,0.8);
+    border-top: 4px solid rgb(23,77,46);
+    border-left: 10px solid rgb(23,77,46);
+    padding:0px;
+    padding-bottom: 10px;
+    width: 98vw;
+    margin:0px auto;
+    border-radius: 80px 50px 0px 0px;
+    height: fit-content;
+    font-size: 20px;
+}
+
+footer #copyright{
+    font-size: 15px;
+    text-align: center;
+    margin: 0px;
+}
+
+.footer1{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 40vw;
+    height: fit-content;
+}
+
+.footer2{
+    display:flex;
+    height: fit-content;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+footer .notes h5{
+    font-size: 25px;
+    font-family: "Heading-Cursive";
+    margin:0px;
+    margin-bottom: 5px;
+    letter-spacing: 5px;
+    color:#ffdd00;
+    text-shadow: 1px 1px 1px black;
+}
+
+footer .notes{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer .notes .info{
+    height: 200px;
+    margin: 0px 30px 0px 30px
+}
+
+
+.footer1 li{
+    list-style: none;
+    margin-left: 50px;
+    margin-bottom: 8px;
+    transition-duration: 0.3s;
+}
+
+.footer1 li:hover{
+    border-radius: 50px;
+    background-color: rgb(23,77,46);
+    color:white;
+    left: 10px;
+}
+
+/*Footer2*/
+
+footer .footer2{
+    width: 50vw;
+    height: 100%;
+}
+
+footer .footer2 .social{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    margin-left: 10px;
+}
+
+footer .footer2 .social ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin:0px;
+}
+
+footer .footer2 .social li{
+    list-style: none;
+    margin: 10px 30px;
+    font-size: 25px;
+}
+
+footer .footer2 .social li:nth-child(1):hover{
+    color:blue;
+    text-shadow: -1px 1px 1px black;
+}
+footer .footer2 .social li:nth-child(2):hover{
+    color:rgb(255, 0, 115);
+    text-shadow: -1px 1px 1px black;
+}
+footer .footer2 .social li:nth-child(3):hover{
+    color:rgb(63, 88, 255);
+    text-shadow: -1px 1px 1px black;
+}
+footer .footer2 .social li:nth-child(4):hover{
+    color:rgb(255, 0, 0);
+    text-shadow: -1px 1px 1px black;
+}
+footer .footer2 .social li:nth-child(5):hover{
+    color:rgb(104, 0, 160);
+    text-shadow: -1px 1px 1px black;
+}
+
+footer .footer2  .news{
+    border: 2px solid goldenrod;
+    border-left: 6px solid goldenrod;
+    border-bottom: 10px solid goldenrod;
+    border-radius: 20px;
+    padding: 15px;
+    width: 90%;
+    margin: 20px 10px 10px 20px;
+}
+
+footer .footer2  .news div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .footer2  .news h5{
+    font-size: 35px;
+    letter-spacing: normal;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+footer .footer2  .news input{
+    background-color: rgba(255, 255, 255, 0.863);
+    color: Black;
+    font-weight: 5px;
+    font-family: "Body-Text";
+    font-size: 25px;
+    width: 100%;
+    text-indent: 50px;
+    height: 35px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    box-shadow: -2px 2px 1px black;
+}
+
+footer .footer2  .news #submit{
+    margin-left: 15px;
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    background-color: goldenrod;
+    cursor: pointer;
+}
+
+footer .footer2  .news #submit:hover{
+    transform: scale(90%);
+}
+
+/*Responsive Media*/
+@media (max-width: 920px) {
+    footer .notes{
+        flex-direction: column;
+    }
+
+    .notes .footer1{
+        height: fit-content;
+        width: 100%;
+        padding-top:0px;
+    }
+
+    footer .notes .info{
+        height: auto;
+        margin: 0px 30px 0px 30px
+    }
+
+    .notes .footer2{
+        margin-top:10px;
+        height: fit-content;
+        width: 100%;
+    }
+
+    footer .footer2 .social {
+        width: 80%;
+        justify-content: space-between;
+        margin: 10px auto;
+    }
+
+    .notes .footer2 h5{
+        margin-left: 10px;
+        letter-spacing: normal;
+    }
+    .notes .footer2 .social li{
+        margin: 10px 10px;
+        font-size: 15px;
+    }
+
+    footer .footer2 .news {
+        font-size: 20px;
+        width: 80%;
+    }
+
+    footer .footer2 .news input {
+        font-size: 15px;
+        text-indent: 20px;
+    }
+}

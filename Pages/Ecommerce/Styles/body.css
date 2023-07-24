@@ -1,0 +1,381 @@
+h1{
+    margin: 0px;
+    color: #d72828;
+    font-family: "Heading-Big";
+    font-size: 60px;
+    text-align: center;
+    text-shadow: -3px -3px 0 #ffffff, 3px -3px 0 #ffffff, -3px 3px 0 #ffffff, 3px 3px 0 #ffffff;
+}
+
+#subheading{
+/*background-color: rgba(100,155,100,0.8);
+border-bottom: 5px solid #006100;
+border-left: 5px solid #006100;
+border-radius: 50px 100px 50px 100px;*/
+text-align: center;
+margin: 10px auto;
+width: 80vw;
+color: #00b336;
+font-family: "Heading-Messy";
+font-size: 30px;
+text-shadow: 1px 1px 1px #000000;
+text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
+
+}
+
+#subheading span{
+    font-size: 35px;
+    color: #ffdd00;
+    text-shadow: 2px 2px 2px #000000;
+}
+
+#marquee{
+    width: 65vw;
+    margin: 10px auto;
+    border-radius: 70px;
+    background-color: #ffdd00;
+    font-size: 20px;
+    font-family: "Body-Text"; 
+    box-shadow: 2px 2px 2px black;
+}
+
+.body-content{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95vw;
+    margin: 0px auto;
+}
+
+.banner{
+    border-radius: 0px 0px 50px 50px;
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+
+.banner:hover{
+    transform: scale(98%);
+    box-shadow: 0px 5px 2px grey;
+}
+
+
+/*Column 1*/
+.body-content .column1{
+    width: 60%;
+    background-color: rgb(255, 255, 255,0.8);
+    background-image: url(../Images/wood.jpg);
+    border: 3px solid #754a00;
+    border-left: 10px solid #613d00;
+    border-bottom: 10px solid #613d00;
+    border-radius: 20px;
+    padding: 10px 30px 10px 30px;
+    margin: 0px 20px 20px 20px;
+    color: black; 
+    position: relative;
+}
+
+.body-content #special{
+    background-image: url(../Images/index/pokecen-appletun-lifesize-plush-banner-dec302020.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom -50px;
+    height: 300px;
+}
+
+.body-content #backInStock{
+    background-image: url(../Images/index/peguin-panda.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    height: 300px;
+}
+
+.body-content #new{
+    background-image: url(../Images/index/tumblr_b31e19140fdea9d70a60ff9a0da2da87_d19d5089_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom -50px;
+    height: 300px;
+}
+
+.body-content #event{
+    background-image: url(../Images/index/202303_banner_paldeatrainers_desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom -50px;
+    height: 300px;
+}
+
+
+.body-content .column1 h3{
+    margin-left: 50%;
+    font-size: 35px;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    border-radius: 50px 0px 50px 50px;
+    border-right: 10px solid white;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-family: "Body-Text";
+}
+
+#feature h4{
+    font-size: 35px;
+    text-align: center;
+    font-family: "Heading-Messy";
+    margin-top:20px;
+    margin-bottom: 5px;
+}
+
+#feature .featureBox{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#feature .boxes{
+    width: 190px;
+    height: 270px;
+    padding:10px;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    position: relative;
+    transition-duration: 0.5s;
+}
+
+#feature .boxes:hover{
+    box-shadow: 3px 3px 5px grey;
+    background-color: #ffdd00;
+    transform: scale(98%);
+}
+
+#feature .boxes .view{
+    font-size: 20px;
+    padding:5px;
+    width: 30;
+    height: fit-content;
+    position: absolute;
+    bottom: 10px;
+    right:  10px;
+    border-radius: 5px 10px 5px 10px;
+    transition: 0.2s ease-in-out;
+}
+
+.view:hover{
+    color:white;
+    background-color: orange;
+
+}
+
+#feature .boxes img{
+    height: 190px;
+    width: 100%;
+    border-radius: 10px;
+    margin: 0px;
+}
+
+#feature .boxes p{
+    font-family: "Body-Text";
+    text-align: left;
+    font-size: 20px;
+    margin-top: 0px;
+}
+#feature #more{
+    font-family: "Heading-Messy";
+    margin: 10px auto;
+    font-size: 25px;
+    width: fit-content;
+    height: fit-content;
+    padding: 5px 20px 5px 20px;
+    border-radius: 20px 10px 25px 15px;
+    outline: none;
+    text-align: center;
+    background-color: whitesmoke;
+    transition: 0.3s ease-in-out;
+}
+
+#feature a #more{
+    text-decoration: none;
+    color:black;
+}
+
+
+#feature #more:hover{
+    background-color: orange;
+    box-shadow: 2px 2px 3px black;
+    color:white;
+}
+
+
+
+/*Column 2*/
+.body-content .column2{
+    position: sticky;
+    align-self: flex-start;
+    top: 3%;
+    width: 35%;
+}
+
+.column2 .Col2-box{
+    width: auto;
+    background-color: rgba(0, 0, 255, 0.329);
+    background-image: url(../Images/wood.jpg);
+    border-radius: 10px 50px 50px 30px;
+    border:#613d00 3px solid;
+    border-left:#613d00 6px solid;
+    border-bottom:#613d00 10px solid;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.Col2-box h5{
+    color:#d72828;
+    text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
+    font-family:"Heading-Cursive";
+    font-size: 30px;
+    margin-top:0px;
+    margin-bottom: 10px;
+    text-align: center;
+    border-right: 5px solid white;
+    border-bottom: 3px solid white;
+    border-radius: 0px 20px 20px 10px;
+}
+
+.Col2-box .monthBox{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Col2-box .monthBox p{
+    text-align: center;
+    margin:5px;
+    font-size: 20px;
+}
+
+.Col2-box .monthImg{
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+
+.Col2-box .monthImg img{
+    width: 200px;
+    height: 210px;
+    transform: scale(95%);
+    margin:0px;
+    border-radius: 10px;
+}
+
+.Col2-box .fact{
+    font-size: 25px;
+}
+
+.Col2-box .fact span{
+    font-size: 28px;
+}
+
+.Col2-box .fact .view{
+    width:fit-content;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 10px auto;
+    margin-bottom: 0px;
+    transition-duration: 0.2s;
+}
+
+.Col2-box .event{
+    font-size: 20px;
+    height: fit-content;
+}
+
+.Col2-box .event h3{
+    color:#d72828;
+    text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
+    font-family:"Heading-Cursive";
+    font-size: 30px;
+    margin-top:0px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.Col2-box .event li{
+    list-style: none;
+    transition-duration: 0.1s;
+}
+
+.Col2-box .event li::before{
+    content: "🍏  ";
+}
+
+.Col2-box .event li a:link,.Col2-box .event li a:active,.Col2-box .event li a:visited{
+    text-decoration: none;
+    color:black;
+}
+
+.Col2-box .event li:hover{
+    border-radius: 10px;
+    background-color: rgba(255, 166, 0,1);
+    color:white;
+    padding:5px;
+}
+
+@media (max-width:920px){
+    #subheading{
+        padding-top:80px;
+    }
+
+    .body-content {
+        flex-direction: column;
+    }
+
+    .body-content .column1 {
+        width: 80%;
+    }
+
+    #feature .boxes{
+        margin: 10px;
+    }
+
+    .body-content .column2 {
+        position: static;
+        width: 100%;
+    }
+
+    .body-content #special {
+        height: 200px;
+    }
+    .body-content #new {
+        height: 200px;
+    }
+    .body-content #backInStock {
+        height: 200px;
+    }
+    .body-content #event {
+        height: 200px;
+    }
+
+    .body-content .column1 h3 {
+        margin-left: 50%;
+        font-size: 20px;
+    }
+
+    #feature h4 {
+        font-size: 25px;
+    }
+
+    #feature .featureBox {
+        justify-content: center;
+    }
+}
+
+@media (max-width:450px){
+    .Col2-box .monthBox {
+        flex-direction: column;
+    }
+}

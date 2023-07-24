@@ -1,0 +1,310 @@
+.body-content {
+    width: 90vw;
+    height: fit-content;
+    background-color: rgb(255, 255, 255,0.8);
+    background-image: url(../../Images/wood.jpg);
+    border: 3px solid #754a00;
+    border-left: 10px solid #613d00;
+    border-bottom: 10px solid #613d00;
+    border-radius: 20px;
+    padding: 10px 30px 10px 30px;
+    margin: 10px auto;
+    margin-bottom: 15px;
+    color: black; 
+    position: relative;
+}
+
+/* Main Product */
+.main-product{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+  /* Left */
+.main-product .productIMG{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:fit-content;
+}
+
+.main-product .productIMG .sideIMG{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+    overflow-y: scroll;
+    border-radius: 20px;
+    border-top: 3px solid white;
+    border-bottom: 7px solid white;
+}
+
+.main-product .productIMG .sideIMG .active{
+    border-left: 5px solid orange;
+    border-right: 5px solid orange;
+}
+
+.main-product .productIMG .sideIMG img{
+    width: 170px;
+    height:150px;
+    margin: 5px;
+    border-radius:20px;
+    box-shadow: 0px 2px 2px black;
+}
+
+.main-product .productIMG .mainIMG {
+    margin-left: 10px;
+    border-radius: 20px;
+    width: fit-content;
+    height: fit-content;
+    padding:10px;
+    background-color: white;
+    box-shadow: 2px 2px 5px black;
+}
+
+.main-product .productIMG .mainIMG img{
+    height: 350px ;
+    width:420px; 
+    border-radius: 20px;
+}
+
+   /* Right */
+.productSell{
+    width: 50%;
+    height: fit-content;
+}
+.productSell h1{
+    font-size: 40px;
+    text-align:center;
+}
+
+.productSell h3{
+    font-size: 20px;
+    text-align:center;
+}
+
+.productSell h3 span{
+    font-size: 15px;
+}
+
+.productSell .Quantity{
+    font-size: 20px;
+    width: fit-content;
+    margin: 10px auto;
+}
+
+.productSell .Quantity input{
+    border: none;
+    outline: none;
+    width: 50px;
+    border-radius: 20px;
+    text-indent: 10px;
+    padding: 5px;
+}
+
+.productSell .AddToCart{
+    font-size: 25px;
+    border-radius: 0px 20px 0px 20px;
+    color:white;
+    text-shadow: 1px 1px 1px black;
+    border-left: orangered 8px solid;
+    border-right: orangered 4px solid;
+    background-color: orange;
+    width: fit-content;
+    padding: 2px 40px 2px 40px;
+    margin: 10px auto;
+}
+
+   /*Tabs */
+.DesRev-Box{
+    display:flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 10px;
+}
+
+.DesRev-Box .text-box{
+    order: 1;
+    border-left: 3px solid white;
+    padding: 10px;
+    width: 90%;
+    height: 190px;
+    overflow-y: scroll;
+    border-radius: 0px 20px 20px 20px;
+    border-right: orange 5px solid;
+    display:none;
+}
+
+.radio-btn:checked+.tabHeading{
+    font-weight: 10px;
+    background-color: white;
+    border-bottom: 3px solid orange;
+}
+
+.radio-btn:checked+.tabHeading+.text-box{
+    display: block;
+    background-color: white;
+}
+
+.productSell #Reviews,.productSell #Description{
+    display:none;
+}
+
+.tabHeading{
+    padding: 10px;
+    font-size: 25px;
+    border-radius: 20px 20px 0px 0px;
+    background-color: rgba(255, 255, 255, 0.605);
+}
+
+.reviewBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+}
+.reviewBox .reviewText{
+    width: 80%;
+    height: fit-content;
+    padding-left: 10px;
+    border-left: 2px solid orange;
+}
+
+/*Feature Section*/
+.body-content h2{
+    color:#d72828;
+    text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
+    font-family:"Heading-Cursive";
+    font-size: 30px;
+    margin:10px;
+    text-align: center;
+    border-right: 5px solid white;
+    border-bottom: 3px solid white;
+    border-radius: 0px 20px 20px 10px;
+}
+
+.body-content .Boxes-wrapper{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    position: relative; 
+    overflow-x: scroll;
+}
+
+.body-content .boxes img{
+    height: 190px;
+    width: 180px;
+    border-radius: 10px;
+    margin: 0px;
+}
+
+.body-content .boxes p{
+    font-family: "Body-Text";
+    text-align: left;
+    font-size: 20px;
+    margin-top: 0px;
+}
+
+.body-content .boxes{
+    font-family: "Heading-Messy";
+    margin: 5px;
+    font-size: 25px;
+    width: 180px;
+    height: 300px;
+    padding: 10px 20px 5px 20px;
+    border-radius: 20px 10px 25px 15px;
+    outline: none;
+    text-align: center;
+    background-color: whitesmoke;
+    transition: 0.3s ease-in-out;
+    position: relative;
+}
+
+.body-content a #more{
+    text-decoration: none;
+    color:black;
+}
+
+
+.body-content #more:hover{
+    background-color: orange;
+    box-shadow: 2px 2px 3px black;
+    color:white;
+}
+
+.body-content .boxes .view{
+    font-size: 20px;
+    padding:0px;
+    width: 50px;
+    height: fit-content;
+    position: absolute;
+    bottom: 10px;
+    right:  10px;
+    border-radius: 50px;
+    transition: 0.2s ease-in-out;
+}
+
+.view:hover{
+    color:white;
+    background-color: orange;
+
+}
+
+.boxes:hover{
+    box-shadow: 3px 3px 5px grey;
+    background-color: #ffdd00;
+    transform: scale(98%);
+}
+
+/*Responsive*/
+
+@media (max-width:920px){
+    .body-content {
+        width: 80%;
+        padding: 10px
+    }
+
+    .body-content:first-of-type {
+        margin-top: 80px;
+    }
+
+    .main-product{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .main-product .productIMG{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .main-product .productIMG .sideIMG{
+        flex-direction: row;
+        height: 100%;
+        width: 100%;
+        overflow-x: scroll;
+        padding:10px 0px;
+    }
+
+    .main-product .productIMG .mainIMG{
+        width: 90%;
+        height: fit-content;
+        margin: 10px;
+    }
+
+    .main-product .productIMG .mainIMG img{
+        width:100%;
+        height: 100%;
+    }
+
+    .productSell{
+        width: 100%;
+    }
+
+    h3{
+        margin: 10px;
+    }
+}

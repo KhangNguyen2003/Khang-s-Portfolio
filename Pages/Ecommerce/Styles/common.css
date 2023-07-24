@@ -1,0 +1,21 @@
+html{
+    scroll-behavior: smooth;
+    overflow-x: none;
+    font-family: "Body-Text";
+    padding: 0px;
+}
+
+a:link,a:active,a:visited,a:focus{
+    color:black;
+    text-decoration: none;
+}
+
+body{
+    background-image: url(../Images//background-apple.jpg);
+    background-size: contain;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-color: rgb(207, 252, 170);
+    padding: 0px;
+    margin:0px;
+}
