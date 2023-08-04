@@ -148,6 +148,7 @@ textarea{
     width: fit-content;
     padding: 0px 40px;
     margin:10px auto;
+    z-index : 2px;
 }
 
 .MovieInfo h2{
