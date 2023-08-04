@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Links-->
+    <link href="./Styles/style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8d2ae1a8e4.js" crossorigin="anonymous"></script>
+
+    <title>Movie Database</title>
+</head>
+<body>
+    <nav>
+        <h1>ThatMovieBuff</h1>
+        <ul>
+            <li><textarea id="text" placeholder="" cols="1" rows="1"></textarea></li>
+            <li><div id="searchBtn"><span><i class="fa-solid fa-magnifying-glass"></i></span></div></li>
+        </ul> 
+    </nav>
+
+    <div id="Greeting">
+        <h1>Welcome to Open Movie Database</h1>
+        <h2>Search for your favorite Movies!</h2>
+        <p>*Not ALL Movies Will have a poster Image*</p>
+    </div>
+
+    <div class="ContainBox">
+        <div class="MovieContainer"></div> 
+
+        <div class="MovieInfo">
+            <div class="Info">
+                <h1></h1><!--Title-->
+                <h2 id="year"></h2><!--Year-->
+                <h2 id="type"></h2>
+                <h2 id="id"></h2> <!--IMDB id-->
+            </div>
+    
+            <div class="MoviePoster">
+            </div>
+        </div>
+    </div>
+ 
+    <footer>Project Designed by Khang Nguyen - 2023 | Open Movie Database API </footer>
+    <script src="./JS/api_fetch.js"></script>
+    <script src="./JS/removeGreet.js"></script>
+    <script src="./JS/select.js"></script>
+    <script src="./JS/get&display.js"></script>
+</body>
+</html>

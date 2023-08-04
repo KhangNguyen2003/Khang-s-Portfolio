@@ -1,0 +1,284 @@
+html{
+    background-color: rgb(68, 68, 68);
+    color:white;
+    scroll-behavior: smooth;
+    background-image: url(./Images/Wallpaper.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Copperplate,fantasy, sans-serif;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+@media screen and (max-width:900px){
+    html{
+        overflow-y: auto;
+    }
+}
+
+body{
+    margin:0px;
+}
+
+/*Nav bar*/
+nav{
+    color:Black;
+    font-weight: 50px;
+    background-color:#f2d023;
+    background-image: linear-gradient(to right, rgb(186, 50, 53) , #f2d023);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    width: 92vw;
+    height: 50px;
+    margin:20px auto;
+    margin-top: 10px;
+    padding: 0px 20px;
+}
+
+nav h1{
+    padding: 5px;
+    font-family: Copperplate,fantasy, sans-serif;
+    text-shadow: -1px 0px 1px white,1px 0px 1px white,0px 3px 3px white,0px -1px 1px white;
+}
+
+@media screen and (max-width: 600px) {
+    nav{
+        padding:5px;
+    }
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 10px;
+    width: fit-content;
+}
+
+nav ul li span{
+    margin-right: 10px;
+}
+@media screen and (max-width: 600px) {
+    nav ul li span{
+        display:none;
+    }
+}
+
+textarea{
+    outline: none;
+    border: none;
+    overflow-x: auto;
+    border-bottom: 1px solid black;
+    background-color: rgba(128, 128, 128, 0);
+    resize: none;
+    font-family: Copperplate,fantasy, sans-serif;
+    width: 15vw;
+    color:black;
+    white-space: nowrap;
+}
+
+#searchBtn{
+    padding: 5px 10px;
+    border-radius: 50px;
+    border: solid 1px black;
+    border-right:3px solid black;
+    border-bottom:3px solid black;
+    cursor: pointer;
+    width: fit-content;
+    transition: 0.2s ease-in-out;
+}
+#searchBtn:hover{
+    background-color: rgb(186, 50, 53);
+    color: white;
+}
+
+/*Greet*/
+#Greeting{
+    text-align: center;
+    margin: 10px;
+    padding-top:70px;
+    font-family: 'Courier New', Courier, monospace,sans-serif;
+    height: 75vh
+}
+
+#Greeting h1{
+    font-size: 55px;
+}
+
+#Greeting h2{
+    font-size: 35px;
+}
+
+.Greet{
+    display:none
+}
+
+/*Movie Contain*/
+.ContainBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@media screen and (max-width: 900px){
+    .ContainBox{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.MovieInfo{
+    position: relative;
+    width:50vw;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    padding-right:30vw;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+}
+.MovieInfo h1{
+    font-size: 55px;
+    border-bottom: 4px solid white;
+    width: fit-content;
+    padding: 0px 40px;
+    margin:10px auto;
+}
+
+.MovieInfo h2{
+    font-size: 30px ;
+}
+
+.MovieInfo .MoviePoster{
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: fixed;
+    width: 370px;
+    height:520px;
+    right:120px;
+    top: 15%;
+    background-color: white;
+    border: 5px solid white;
+    display: none;
+}
+
+@media screen and (max-width: 920px){
+    .MovieInfo{
+        padding-right:0px;
+    }
+
+    .MovieInfo h1{
+        font-size: 30px;
+        padding: 0px 10px;
+    }
+
+    .MovieInfo .MoviePoster{
+        position: relative;
+        top:auto;
+        right: auto;
+        bottom: 0px;
+        margin: 10px auto;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width:450px){
+    .MovieInfo .MoviePoster{
+        width: 205px;
+        height: 280px;
+    }
+}
+
+.MovieContainer{
+    display: flex;
+    flex-direction: column;
+    height: 550px;
+    width: fit-content;
+    overflow-y: scroll;
+    margin: 10px;
+    margin-left: 20px;
+    display : none;
+    position: relative;
+    top: -10px;
+}
+
+@media screen and (max-width: 900px) {
+    .MovieContainer {
+        flex-direction: row;
+        width: 95vw;
+        margin:0px;
+        padding:0px;
+        height:250px;
+        border-bottom: 1px solid white;
+    }
+
+    .MovieCards{
+        margin:5px;
+    }
+}
+
+.MovieContainer::-webkit-scrollbar{
+    display: none;
+}
+
+.MovieCards{
+    padding: 10px;
+    margin: 10px;
+    width: 170px;
+    height: 220px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.MovieCards img{
+    width: 170px;
+    height: 210px;
+    border: 5px solid white;
+    position: relative;
+}
+
+.MovieCards:hover img, .active img{
+    border: 5px solid #e0c01f;
+    border-top:5px solid #ffea80 ;
+    border-left:5px solid #ffea80;
+}
+ 
+/*.MovieCards:hover::after,.active::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0px;
+    border: 2px solid #e0c01f;
+}*/
+
+ /*Footer*/
+ footer{
+    position: fixed;
+    bottom: 5px;
+    font-size: 15px;
+    letter-spacing: 3px;
+    background-color: #e0c01f;
+    text-align: center;
+    padding-top: 5px;
+    width: 100vw;
+    margin:0px auto;
+    color:black;
+   
+ }
+
+ @media screen and (max-width:450px){
+    footer{
+        position: relative;;
+    }
+}
